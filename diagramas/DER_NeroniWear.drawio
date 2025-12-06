@@ -1,0 +1,117 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="neroniwear_der" name="DER NeroniWear">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- Entities -->
+        <mxCell id="cliente" value="CLIENTE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="endereco" value="ENDERECO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="160" width="140" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="telefone" value="CLIENTE_TELEFONE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="160" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="usuario" value="USUARIO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="130" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="categoria" value="CATEGORIA" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="450" y="40" width="150" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="produto" value="PRODUTO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="450" y="140" width="150" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="estoque" value="ESTOQUE" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="450" y="240" width="150" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="fornecedor" value="FORNECEDOR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc6666;" vertex="1" parent="1">
+          <mxGeometry x="700" y="40" width="170" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="produto_fornecedor" value="PRODUTO_FORNECEDOR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6e6;strokeColor=#cc6666;" vertex="1" parent="1">
+          <mxGeometry x="700" y="140" width="200" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pedido" value="PEDIDO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1ffc7;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="240" y="350" width="150" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="item_pedido" value="ITEM_PEDIDO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1ffc7;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="450" y="350" width="180" height="50" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="pagamento" value="PAGAMENTO" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1ffc7;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="240" y="450" width="150" height="50" as="geometry"/>
+        </mxCell>
+
+        <!-- Relationships -->
+        <mxCell id="rel1" edge="1" parent="1" value="1:N" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="160" as="sourcePoint"/>
+            <mxPoint x="130" y="90" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel2" edge="1" parent="1" value="1:N" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="160" as="sourcePoint"/>
+            <mxPoint x="140" y="65" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel3" edge="1" parent="1" value="1:0..1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="260" as="sourcePoint"/>
+            <mxPoint x="130" y="90" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel4" edge="1" parent="1" value="1:N" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="90" as="sourcePoint"/>
+            <mxPoint x="525" y="140" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel5" edge="1" parent="1" value="1:1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="525" y="190" as="sourcePoint"/>
+            <mxPoint x="525" y="240" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel6" edge="1" parent="1" value="N:N" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="140" as="sourcePoint"/>
+            <mxPoint x="700" y="65" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel7" edge="1" parent="1" value="N:N" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="330" y="350" as="sourcePoint"/>
+            <mxPoint x="450" y="350" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+        <mxCell id="rel8" edge="1" parent="1" value="1:0..1" style="endArrow=block;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="350" as="sourcePoint"/>
+            <mxPoint x="240" y="450" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
